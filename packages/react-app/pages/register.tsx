@@ -214,10 +214,10 @@ export default function RegistrationPage({}) {
         <div className="flex justify-end">
           {status === "unauthenticated" ? (
             <button
-              onClick={() => signIn("twitter")}
+              onClick={() => signIn()}
               className="px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200"
             >
-              Sign in with Twitter
+              Sign in 
             </button>
           ) : status === "loading" ? (
             <h1>Loading...</h1>

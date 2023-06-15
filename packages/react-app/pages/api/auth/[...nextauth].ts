@@ -1,9 +1,27 @@
 import NextAuth from "next-auth";
 import TwitterProvider from "next-auth/providers/twitter";
+import Discord from "next-auth/providers/discord";
+import Google from "next-auth/providers/google";
+import Reddit from "next-auth/providers/reddit";
 
 export default NextAuth({
     providers: [
         TwitterProvider({
+            clientId: process.env.TWITTER_CLIENT_ID as string,
+            clientSecret: process.env.TWITTER_CLIENT_SECRET as string,
+            version: "2.0",
+        }),
+        Discord({
+            clientId: process.env.TWITTER_CLIENT_ID as string,
+            clientSecret: process.env.TWITTER_CLIENT_SECRET as string,
+            version: "2.0",
+        }),
+        Google({
+            clientId: process.env.TWITTER_CLIENT_ID as string,
+            clientSecret: process.env.TWITTER_CLIENT_SECRET as string,
+            version: "2.0",
+        }),
+        Reddit({
             clientId: process.env.TWITTER_CLIENT_ID as string,
             clientSecret: process.env.TWITTER_CLIENT_SECRET as string,
             version: "2.0",
