@@ -17,7 +17,7 @@ export default function Header() {
                 
             />
       </Link>
-            
+      <Link href="/register">Register</Link>
              <Link href="/lookup">Lookup</Link>
              <Link href="/revoke">Revoke</Link>
              <Link href="/send">Send</Link>
