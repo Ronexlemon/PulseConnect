@@ -116,45 +116,7 @@ function OdisProvider({ children }) {
         init();
     }, []);
 
-    // async function getAccountsFromPhoneNumber(twitterHandle: string) {
-    //     const identifier = await getIdentifier(twitterHandle);
-    //     const attestations =
-    //         await state.federatedAttestations.lookupAttestations(identifier, [
-    //             state.issuer.address,
-    //         ]);
-    //     return attestations.accounts;
-    // }
-
-    // async function checkIfIdentifierIsRegisteredAlreadyUnderIssuer(
-    //     phoneNumber
-    // ) {
-    //     const accounts = await getAccountsFromPhoneNumber(phoneNumber);
-    //     return accounts.length;
-    // }
-
-    // async function deregisterIdentifier(phoneNumber, address) {
-    //     const isRegistered =
-    //         await checkIfIdentifierIsRegisteredAlreadyUnderIssuer(phoneNumber);
-    //     if (isRegistered) {
-    //         const identifier = await getIdentifier(phoneNumber);
-    //         const revokeReceipt = await state.federatedAttestations
-    //             .revokeAttestation(identifier, state.issuer.address, address)
-    //             .sendAndWaitForReceipt();
-    //         console.log(
-    //             `${await explorerLink()}tx/${revokeReceipt.transactionHash}`
-    //         );
-    //     }
-    // }
-
-    // async function sendToPhoneNumber(from, to, value) {
-    //     // Right now sending to the latest attested address
-    //     const tx = await connector.sendTransaction({
-    //         from,
-    //         to,
-    //         value,
-    //     });
-    //     console.log(tx);
-    // }
+    
 
     return (
         <OdisContext.Provider
