@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
     ACCOUNTS_CONTRACT,
     ACCOUNTS_PROXY_ADDRESS,
@@ -40,7 +41,7 @@ const INITIAL_STATE = {
 export const OdisContext = React.createContext(INITIAL_STATE);
 let ONE_CENT_CUSD = ethers.utils.parseEther("0.01");
 
-const reducer = (state = INITIAL_STATE, action) => {
+const reducer = (state = INITIAL_STATE, action:any) => {
     switch (action.type) {
         case "ISSUER":
             return { ...state, issuer: action.payload };

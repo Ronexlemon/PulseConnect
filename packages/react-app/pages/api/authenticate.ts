@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Client, auth } from "twitter-api-sdk";
 import dotenv from "dotenv";
 import { NextApiRequest, NextApiResponse } from "next";

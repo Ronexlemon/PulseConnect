@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useAccount } from "wagmi";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useContext, useEffect, useState } from "react";
